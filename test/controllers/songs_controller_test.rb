@@ -17,7 +17,7 @@ class SongsControllerTest < ActionDispatch::IntegrationTest
 
   test "should create song" do
     assert_difference('Song.count') do
-      post songs_url, params: { song: { artist_id_id: @song.artist_id_id, name: @song.name } }
+      post songs_url, params: { song: { artist_id: @song.artist_id, name: @song.name } }
     end
 
     assert_redirected_to song_url(Song.last)
@@ -34,7 +34,7 @@ class SongsControllerTest < ActionDispatch::IntegrationTest
   end
 
   test "should update song" do
-    patch song_url(@song), params: { song: { artist_id_id: @song.artist_id_id, name: @song.name } }
+    patch song_url(@song), params: { song: { artist_id: @song.artist_id, name: @song.name } }
     assert_redirected_to song_url(@song)
   end
 

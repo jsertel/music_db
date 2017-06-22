@@ -2,8 +2,8 @@
 
 one:
   name: MyString
-  artist_id: one
+  artist: one
 
 two:
   name: MyString
-  artist_id: two
+  artist: two
